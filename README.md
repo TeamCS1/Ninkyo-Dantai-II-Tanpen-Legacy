@@ -1,6 +1,6 @@
 # Ninkyo-Dantai-II
 
-#Development Manual
+# Development Manual
 
 _This document contains useful information for development of Ninkyo Dantai II. We explain why we do certain things, the way we do it._
 

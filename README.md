@@ -4,7 +4,7 @@ _This document contains useful information for development of Ninkyo Dantai II. 
 
 ## 3D Models - Game Object Sprite Masks
 
-All object masks must be marked in text.
+All object masks must be marked in text and they must be a multiple of 2. 64x64, 128x128, 256x256 ... etc
 
 ## **3D Models - Exporting from Sketchup 2021**
 
@@ -34,26 +34,36 @@ d3d_transform_set_identity();
 Waypoint coronas - All 3D Objects must use a depth of 0! When looking through corona's you can see the object. For whatever reason you don't want to see an object through the corona, set it to negative. Below 0, not 0.
 All 3D Solid textures must use the tick 3D model box in the Sprite Menu and must be a multiple of 2.
 
-## Wolrd Game Object
+## World Game Object
 
-Some Objects must only be used once, which are found inside the world spawn object.
+Some Objects must only be used once, which are found inside the world spawn object. These are 'fired' for specific niche events only.
 
 ## **Debug - Keys**
 
-You can now change floor texture using mousewheel
+You can now change floor texture using the mousewheel
 Change render distance using + and -
 
 ## Google Sketchup stuff
 
 Converting everything into polygons, removes all visual glitches with the objects. They also must be triangulated.
-All Sketchup models must be centred to the middle and rotation must be at 0 degrees (One* plugin(s) are used for this) (*However now this is built into the d3d tool yay)
+All Sketchup models must be centred to the middle and rotation must be at 0 degrees 
+
+A plugin called _**Chris Fullmer Tools**_ is used for centering models. (*However, this is now built into the d3d tool yay!)
 
 Green Left, Red Right. (Fixes object normals)
 
 ## UV Mapping
-Everything must be UV mapped after.
+Everything must be UV mapped after using _**Ultimate Unwrap 3D Pro**_.
 
 ## Post UV Mapping Convert from .OBJ File to .D3D File
+
+Always click snap to ground first.
+
+Next click on normals, and select either flat or smooth depending on how you want the effect. In most cases I click on flat normals.
+
+Click on Assets and load a texture file in .PNG format.
+
+Click on materials and load the UV map that was created when you went through the texturing process.
 
 Once you have finished UV Mapping, use the obj converter to convert models from .obj to .d3d format, which is found on my website.
 

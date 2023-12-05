@@ -14,6 +14,14 @@ When exporting 3D models ensure you select and tick all the 'OBJ export options'
 
 ![image](https://github.com/TeamCS1/Ninkyo-Dantai-II/assets/84191027/6c5096fe-5819-42a0-9cf5-61e0259afd06)
 
+## Rendering Specifics
+
+NOTE: In GMS2, setting the projection differs from 1.4 – by default, it now does a conversion to right-handed coordinate space to stay consistent with 2D, but this inverts the up vector. 
+
+To make the projection act like 1.4 and before and use left-handed space and make the up-vector act as expected, you must make the fov and ratio values negative.
+
+![image](https://github.com/TeamCS1/Ninkyo-Dantai-II/assets/84191027/32a88392-4b5b-432f-ac5e-4aa2c72a3b18)
+
 ## **Order of 3D Batch Drawings**
 The order of the 3D draw transformation events also matters:
 
@@ -28,8 +36,7 @@ draw model...
 d3d_transform_set_identity();
 ```
 
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+> [!TIP]
 
 ## Rendering 3D Game Models
 
@@ -53,7 +60,6 @@ All Sketchup models must be centered to the middle and rotation must be at 0 deg
 A plugin called _**Chris Fullmer Tools**_ is used for centering models. (*However, this is now built into the d3d tool yay!)
 
 > [!TIP]
-> Optional information to help a user be more successful.
 
 It is still important to center models in the Sketchup step as it is good practice and is a method used to keep all models uniform and consistent across projects.
 

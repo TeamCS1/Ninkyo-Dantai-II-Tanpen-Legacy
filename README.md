@@ -37,6 +37,7 @@ d3d_transform_set_identity();
 ```
 
 > [!TIP]
+> Read carefully...
 
 ## Rendering 3D Game Models
 
@@ -60,6 +61,7 @@ All Sketchup models must be centered to the middle and rotation must be at 0 deg
 A plugin called _**Chris Fullmer Tools**_ is used for centering models. (*However, this is now built into the d3d tool yay!)
 
 > [!TIP]
+> Read carefully...
 
 It is still important to center models in the Sketchup step as it is good practice and is a method used to keep all models uniform and consistent across projects.
 

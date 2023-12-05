@@ -48,9 +48,14 @@ Change render distance using + and -
 ## Google Sketchup stuff
 
 Converting everything into polygons, removes all visual glitches with the objects. They also must be triangulated.
-All Sketchup models must be centred to the middle and rotation must be at 0 degrees 
+All Sketchup models must be centered to the middle and rotation must be at 0 degrees.
 
 A plugin called _**Chris Fullmer Tools**_ is used for centering models. (*However, this is now built into the d3d tool yay!)
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+It is still important to center models in the Sketchup step as it is good practice and is a method used to keep all models uniform and consistent across projects.
 
 Green Left, Red Right. (Fixes object normals)
 

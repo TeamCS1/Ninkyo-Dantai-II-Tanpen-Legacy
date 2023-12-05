@@ -26,6 +26,9 @@ draw model...
 d3d_transform_set_identity();
 ```
 
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
 ## Rendering 3D Game Models
 
 Waypoint coronas - All 3D Objects must use a depth of 0! When looking through corona's you can see the object. For whatever reason you don't want to see an object through the corona, set it to negative. Below 0, not 0.

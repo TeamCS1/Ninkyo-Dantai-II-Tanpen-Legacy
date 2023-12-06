@@ -29,7 +29,7 @@ To make the projection act like 1.4 and before and use left-handed space and mak
 > 
 The order of the 3D draw transformation events also matters:
 
-```
+```javascript
 d3d_transform_set_identity();
 d3d_transform_add_rotation_x(0);
 d3d_transform_add_rotation_y(0);

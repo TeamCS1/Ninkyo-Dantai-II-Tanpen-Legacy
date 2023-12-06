@@ -40,18 +40,32 @@ draw model...
 d3d_transform_set_identity();
 ```
 
+## World Game Object
+
+Some Objects must only be used once, which are found inside the world spawn object. These are 'fired' for specific niche events only.
+
 ## Rendering 3D Game Models
 
 Waypoint coronas - All 3D Objects must use a depth of 0! When looking through corona's you can see the object. For whatever reason you don't want to see an object through the corona, set it to negative. Below 0, not 0.
 All 3D Solid textures must use the tick 3D model box in the Sprite Menu and must be a multiple of 2.
 
-## World Game Object
+## Greyboxing the World
 
-Some Objects must only be used once, which are found inside the world spawn object. These are 'fired' for specific niche events only.
+A relatively new technique I am playing around with circa December 2023.
+
+The approach to city-level design is making the city building blocks made from grey untextured models.
+
+To start with you'll need an appropriate grey texture:
+
++ RGB(128, 128, 128): This represents a mid-grey colour. Each component is set to half of the maximum value (255), resulting in a neutral grey.
+
++ RGB(192, 192, 192): This is a lighter grey, with each component set to three-quarters of the maximum value.
+
++ RGB(64, 64, 64): This is a darker grey, with each component set to one-quarter of the maximum value.
 
 ## **Debug - Keys**
 
-You can now change floor texture using the mousewheel
+You can now change floor texture using the mouse wheel
 Change render distance using + and -
 
 ## Google Sketchup stuff

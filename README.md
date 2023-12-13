@@ -8,6 +8,18 @@ _This document contains useful information for development of Ninkyo Dantai II. 
 
 All object masks must be marked in text and they must be a multiple of 2. 64x64, 128x128, 256x256 ... etc
 
+## **Code Short Circuiting**
+
+A neat trick is to utilize GML’s short-circuiting. Short-circuiting is how GML decides to stop reading your conditionals when a false value is reached. For example, given the following code:
+
+```javascript
+if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
+{
+  // stuff
+}
+```
+Due to the fact that 1 + 1 is not 3, GameMaker won’t even bother reading the instance_place call. Since you are saying both statements must be true, there is no way that the conditional could return true if the first part is false. Use this to your advantage when ordering your conditionals. If you have checks that are more performance-heavy than others, put the lighter ones first! And additionally, keep in mind which conditionals are most likely to be false -- having five conditionals that will almost always be true, followed by one that will almost always be false, is a waste of time to process.
+
 ## **3D Models - Exporting from Sketchup 2021**
 
 When exporting 3D models ensure you select and tick all the 'OBJ export options'.

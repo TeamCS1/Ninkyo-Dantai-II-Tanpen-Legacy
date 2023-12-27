@@ -20,6 +20,14 @@ if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
 ```
 Due to the fact that 1 + 1 is not 3, GameMaker won’t even bother reading the instance_place call. Since you are saying both statements must be true, there is no way that the conditional could return true if the first part is false. Use this to your advantage when ordering your conditionals. If you have checks that are more performance-heavy than others, put the lighter ones first! And additionally, keep in mind which conditionals are most likely to be false -- having five conditionals that will almost always be true, followed by one that will almost always be false, is a waste of time to process.
 
+## **Sketchup Scaling Guide**
+
+HEIGHT (ONE STORY) - 50M
+WIDTH AND DEPTH - 100m
+
+HEIGHT (TWO STORY) - 100M
+WIDTH AND DEPTH - 100m
+
 ## **3D Models - Exporting from Sketchup 2021**
 
 When exporting 3D models ensure you select and tick all the 'OBJ export options'.

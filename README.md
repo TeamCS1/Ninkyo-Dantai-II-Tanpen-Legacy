@@ -67,6 +67,7 @@ Some Objects must only be used once, which are found inside the world spawn obje
 ## Rendering 3D Game Models
 
 Waypoint coronas - All 3D Objects must use a depth of 0! When looking through corona's you can see the object. For whatever reason you don't want to see an object through the corona, set it to negative. Below 0, not 0.
+
 All 3D Solid textures must use the tick 3D model box in the Sprite Menu and must be a multiple of 2.
 
 ## Greyboxing the World

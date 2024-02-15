@@ -42,7 +42,7 @@ Draw Event
 ```javascript
 draw_text(20, 20, "time: " + string(t) + " ms");
 ```
-current_time measures in milliseconds, if you want something precicer use get_timer(), that one is in microseconds. If your game runs at 60 fps, you have 16.67 ms per step, if your game needs more than that, it slows down.
+current_time measures in milliseconds, if you want something precise use get_timer(), that one is in microseconds. If your game runs at 60 fps, you have 16.67 ms per step, if your game needs more than that, it slows down.
 
 ## **Sketchup Scaling Guide**
 

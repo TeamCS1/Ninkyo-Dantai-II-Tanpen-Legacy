@@ -29,17 +29,18 @@ step event or draw event.
 
 Step Event
 ```javascript
-if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
-{
-  // stuff
-}
+t = current_time;
+// >
+
+// test code here
+
+// >
+t = current_time - t;
+
 ```
 Draw Event
 ```javascript
-if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
-{
-  // stuff
-}
+draw_text(20, 20, "time: " + string(t) + " ms");
 ```
 current_time measures in milliseconds, if you want something precicer use get_timer(), that one is in microseconds. If your game runs at 60 fps, you have 16.67 ms per step, if your game needs more than that, it slows down.
 

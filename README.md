@@ -20,6 +20,29 @@ if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
 ```
 Due to the fact that 1 + 1 is not 3, GameMaker won’t even bother reading the instance_place call. Since you are saying both statements must be true, there is no way that the conditional could return true if the first part is false. Use this to your advantage when ordering your conditionals. If you have checks that are more performance-heavy than others, put the lighter ones first! And additionally, keep in mind which conditionals are most likely to be false -- having five conditionals that will almost always be true, followed by one that will almost always be false, is a waste of time to process.
 
+## **Profiling**
+
+About profiling, yeah wasn't in GM 8 yet. They first implemented it in GM:S 1.3, but it still tells you the fps at least.
+
+If you want to know how much time certain code needs exactly you can make a timer that measures time before and after the code has run, the difference is the time needed.
+step event or draw event.
+
+Step Event
+```javascript
+if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
+{
+  // stuff
+}
+```
+Draw Event
+```javascript
+if (1 + 1 == 3) && (instance_place(x, y, obj_enemy))
+{
+  // stuff
+}
+```
+current_time measures in milliseconds, if you want something precicer use get_timer(), that one is in microseconds. If your game runs at 60 fps, you have 16.67 ms per step, if your game needs more than that, it slows down.
+
 ## **Sketchup Scaling Guide**
 
 HEIGHT (ONE STORY) - 50M

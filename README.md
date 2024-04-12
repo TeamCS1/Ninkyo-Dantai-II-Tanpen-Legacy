@@ -6,6 +6,12 @@ This project has been marked as legacy, because the game development has been mo
 
 The new project can be found here - https://github.com/TeamCS1/Ninkyo-Dantai-II-Tanpen
 
+# Developement Constraints
+
+- GameMaker Studio 3D is limited to 8 hardware lights. I also had a few bugs where some of them were not being switched off/on.
+- GameMaker Studio 3D .d3d format is slow.
+- GameMaker Studio 3D distance based LODs bugs (may be a me issue here).
+
 # Development Manual
 
 _This document contains useful information for development of Ninkyo Dantai II. We explain why we do certain things, the way we do it._

@@ -1,5 +1,9 @@
 # Ninkyo-Dantai-II
 
+# About
+
+This project has been marked as legacy, because the game development has been moved to Unity 3D due to a number of GameMaker Studio engine constraints.
+
 # Development Manual
 
 _This document contains useful information for development of Ninkyo Dantai II. We explain why we do certain things, the way we do it._

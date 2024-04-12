@@ -17,6 +17,8 @@ The new project can be found here - https://github.com/TeamCS1/Ninkyo-Dantai-II-
 
 _This document contains useful information for development of Ninkyo Dantai II. We explain why we do certain things, the way we do it._
 
+The development manual has been moved to the Wiki.
+
 ## 3D Models - Game Object Sprite Masks
 
 All object masks must be marked in text and they must be a multiple of 2. 64x64, 128x128, 256x256 ... etc
